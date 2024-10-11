@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicação de Números</title>
+</head>
+<body>
+    <h1>Funções</h1>
+    <h2>Multiplicar Números</h2>
+
+    <form>
+        <label for="num1">Número 1:</label>
+        <input type="number" id="num1"><br><br>
+
+        <label for="num2">Número 2:</label>
+        <input type="number" id="num2"><br><br>
+
+        <label for="num3">Número 3:</label>
+        <input type="number" id="num3"><br><br>
+
+        <button type="button" onclick="multiplicar()">Calcular</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script>
+        function multiplicar() {
+            // Pegando os valores dos inputs
+            const num1 = document.getElementById('num1').value;
+            const num2 = document.getElementById('num2').value;
+            const num3 = document.getElementById('num3').value;
+
+            // Convertendo os valores para número e multiplicando
+            const resultado = num1 * num2 * num3;
+
+            // Mostrando o resultado no parágrafo
+            document.getElementById('resultado').innerHTML = "O resultado é: " + resultado;
+        }
+    </script>
+</body>
+</html>
